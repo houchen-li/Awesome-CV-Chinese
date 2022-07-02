@@ -1,0 +1,145 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+\usepackage{xeCJK}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-skyblue}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{Houchen_Li_CPFS.jpg}
+\name{Houchen}{Li}
+\position{Computational Physicist{\enskip\cdotp\enskip}Data Scientist}
+\address{Reitbahnstr. 35 / Wohnungs-Nr. 1615, 01069 Dresden, Germany}
+
+\mobile{+49 1520 4123 143}
+\email{houchen\_li@hotmail.com}
+%\homepage{www.posquit0.com}
+\github{houchen-li}
+\linkedin{houchen-li-b6088a138}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``I... a universe of atoms, an atom in the universe."  --Richard P. Feynman}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Emergent Complexity in Physical Systems Laboratory}
+  {Emmett Brown\\EPFL SB B2F-LAB\\PH H1 446 (Bâtiment PH)\\Station 3\\CH-1015 Lausanne}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Application for Ph.D. Candidate}
+% How the letter is opened
+\letteropening{Dear staff of ECPS,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Houchen Li~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+\lettersection{About Me}
+This is Houchen Li, a Chinese student who has been in Germany for a long while to study computational fluid dynamics. As I saw your job request, I realized this offer would be an essential position that I should never ignore.
+
+Let me first start with my knowledge background. My major field is computational physics. And my main programming languages are C, C++, Python. I have 8 years coding experience on Linux. In the past, I was focusing on matrix operation such as big matrix inversion, big matrix decomposition, big matrix eigenvalues determination. And I also have experience to deal with minimum searching, parameters optimization, stochastic process, fluid visualization. I believe these knowledge could be broadly used in data science. And my math level can help me good handle that.
+
+\lettersection{Why ECPS?}
+As far as I know, EPFL is one of the most famous university of Europe. And the field of ECPS is highly consistent to what I learnt in master degree study. Now ECPS is responsible for Channelflow v2.0 package. I once played with this package in my master degree study. I highly agree with the philosophy of your team. I hope to contribute to that.
+
+\lettersection{Why Me?}
+Indeed, I am not a graduate from mechanical engineering or computer science. But I am sure I can provide another kinds of approaches to the engineering problems by using advanced math and physics skills. In fact, physics research is about finding solutions for the very fundamental problems. In the past 8 years, I was asked to solve a lot of models on computer. Now I hope to promote my career into the broader region.
+
+In addtional, I have a good sense of history. I like to know how human civilization goes in such a way. In my opinion, human society is a highly chaotic interacting system. I would spend time to investigate how individuals get along with others.
+
+%My germany language level is not at C1. But I have very good English skill. If necessary, I will try my best to improve my German language level. I am not afraid of language study.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
